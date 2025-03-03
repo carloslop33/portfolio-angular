@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleMenu()" class="menu-button">
+    <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+  </button>
+  <span class="logo">Mi porfolio</span>
+  <span class="spacer"></span>
+  <nav [class.open]="menuOpen">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+      <li><a routerLink="/contacto" routerLinkActive="active">Contacto</a></li>
+    </ul>
+  </nav>
+</mat-toolbar>

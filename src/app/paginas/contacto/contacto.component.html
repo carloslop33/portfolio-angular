@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h2 class="text-center fw-bold">Contáctame</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form #contactForm="ngForm">
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-bold">Nombre</label>
+          <input type="text" id="nombre" class="form-control" required ngModel name="nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email</label>
+          <input type="email" id="email" class="form-control" required ngModel name="email">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="4" required ngModel name="mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</div>

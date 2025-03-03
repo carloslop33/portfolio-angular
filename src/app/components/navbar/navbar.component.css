@@ -1,0 +1,52 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #11538f; /* Azul Material */
+  color: white;
+}
+
+.menu-button {
+  display: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.open {
+    display: block;
+  }
+}
